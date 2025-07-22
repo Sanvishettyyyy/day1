@@ -7,5 +7,6 @@ public class stringss {
        // String name=sc.next();      //only first string will be printed
        String name=sc.nextLine();       // to read the entire line including spaces
         System.out.println("name is:"+name);
+        sc.close();
     }
 }

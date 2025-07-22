@@ -24,6 +24,6 @@ System.out.println("x is found in location ("+i+","+j+")");
                 }
 }
         }
-    }
+  sc.close();  }
 }
 
