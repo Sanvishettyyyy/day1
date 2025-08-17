@@ -10,15 +10,15 @@ public class recursion20 {
             System.out.println(subsets);
             return;
         }
-        subsets.add(n);
-        findSubsets(n-1,subsets);
-subsets.remove(subsets.size()-1);
-findSubsets(n-1,subsets);
+        subsets.add(n);    //add from last index that is n
+        findSubsets(n-1,subsets);   //continue it for n-1 elements
+subsets.remove(subsets.size()-1);   //remove it till size-1
+findSubsets(n-1,subsets);           
 
     }
     public static void main(String[]args){
         int n=3;
-        ArrayList<Integer> subsets=new ArrayList<>();
+        ArrayList<Integer> subsets=new ArrayList<>();  //subsets in array list format
         findSubsets(n,subsets);
     }
 }
